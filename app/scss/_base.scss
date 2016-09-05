@@ -1,0 +1,32 @@
+
+// Colors
+$primary-white: #D4D6B9;
+$second-white: #F1F1F1;
+$dark-blue: #2C3E50;
+$primary-black: #343830;
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Mixins
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

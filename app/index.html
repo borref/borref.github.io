@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Andrés Castañeda - Web Developer</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1,
+		 user-scalable=no, minimal-ui">
+		 <meta name="description" content="Andres Castañeda Personal Web Portfolio">
+		 <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+		 <link rel="stylesheet" type="text/css" href="css/global.css">
+		 <link rel="stylesheet" href="vendor/photoSwipe/photoswipe.css">
+		 <link rel="stylesheet" href="vendor/photoSwipe/default-skin/default-skin.css">
+	</head>
+	<body>
+		<header>
+			<div class="ui container">
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#work">Work</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Home banner -->
+		<section id="home">
+			<h1 class="ui header">
+				Hi! I'm Andrés Castañeda
+			</h1>
+			<p class="sub header">
+				I am a web developer from Barranquilla, Colombia. I enjoy building useful
+				and awesome apps, and I am always willing to learn something new.
+			</p>
+			<ul class="ui social">
+				<li class="item">
+					<a href="https://www.linkedin.com/in/andres-borre" target="_blank">
+						<i class="big link linkedin square icon"></i>
+					</a>
+				</li>
+				<li class="item">
+					<a href="https://github.com/borref" target="_blank">
+						<i class="big link github icon"></i>
+					</a>
+				</li>
+				<li class="item">
+					<a href="skype:borref22?chat" target="_blank">
+						<i class="big link skype icon"></i>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Work and projects I've worked -->
+		<section id="work">
+			<div class="ui container">
+				<h2>Work</h2>
+				<div class="ui doubling four column grid">
+					<article class="column">
+						<img id="nailstyle" class="ui fluid rounded image" src="images/logos/nailstyle.png" alt="Nailstyle" />
+						<h3>Nailstyle</h3>
+						<p>
+							Social network for nail artists and saloons.
+						</p>
+						<p>
+							<strong>Technologies</strong>
+						</p>
+						<ul class="technologies-list">
+							<li class="ui label">HTML5</li>
+							<li class="ui label">SASS</li>
+							<li class="ui label">Foundation</li>
+							<li class="ui label">jQuery</li>
+							<li class="ui label">Ruby on Rails</li>
+						</ul>
+					</article>
+					<article class="column">
+						<img id="frepi" class="ui fluid rounded image" src="images/logos/frepi.png" alt="Frepi" />
+						<h3>Frepi</h3>
+						<p>
+							Start up platform for connecting distributors and customers.
+						</p>
+						<p>
+							<strong>Technologies</strong>
+						</p>
+						<ul class="technologies-list">
+							<li class="ui label">HTML5</li>
+							<li class="ui label">SASS</li>
+							<li class="ui label">Semantic UI</li>
+							<li class="ui label">jQuery</li>
+							<li class="ui label">KnockoutJS</li>
+							<li class="ui label">Facebook API</li>
+						</ul>
+					</article>
+					<article class="column">
+						<img id="nu3" class="ui fluid rounded image" src="images/logos/nu3.png" alt="Nailstyle" />
+						<h3>Nu3 App</h3>
+						<p>
+							Mobile app for get latest news about Nu3 Foundation, and donate to their
+							cause.
+						</p>
+						<p>
+							<strong>Technologies</strong>
+						</p>
+						<ul class="technologies-list">
+							<li class="ui label">Java</li>
+							<li class="ui label">Loopj</li>
+							<li class="ui label">Picasso</li>
+							<li class="ui label">Material Design</li>
+						</ul>
+					</article>
+					<article class="column">
+						<img id="izinotas" class="ui fluid rounded image" src="images/logos/izinotas.png" alt="Nailstyle" />
+						<h3>IziNotas</h3>
+						<p>
+							Start up platform for consulting grades/marks on several universities.
+							over Barranquilla.
+						</p>
+						<p>
+							<strong>Technologies</strong>
+						</p>
+						<ul class="technologies-list">
+							<li class="ui label">HTML5</li>
+							<li class="ui label">CSS3</li>
+							<li class="ui label">Ratchet</li>
+							<li class="ui label">jQuery</li>
+							<li class="ui label">Backbone</li>
+							<li class="ui label">KnockoutJS</li>
+							<li class="ui label">Cordova</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Some information about me -->
+		<section id="about">
+			<div class="ui container">
+				<h2>About</h2>
+				<p>
+					I am a web developer, Computer Science Student <i>Fifth year</i> [last one c:],
+					 with over a year of experience working in different
+					kind of projects, going from web applications to mobile development.
+				</p>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="ui container">
+				<h2>Say Hello</h2>
+				<div class="ui stackable two column grid">
+					<div class="column">
+						<div class="ui container">
+							<form class="ui form" name="contact" action="">
+								<div class="field">
+									<input type="text" name="name" placeholder="Name:">
+								</div>
+								<div class="field">
+									<input type="email" name="email" placeholder="Email:">
+								</div>
+								<div class="field">
+									<input type="text" name="subject" placeholder="Subject:">
+								</div>
+								<div class="field">
+									<textarea name="message" rows="8" placeholder="Message:"></textarea>
+								</div>
+								<button class="ui basic grey button" type="submit">Send</button>
+							</form>
+						</div>
+					</div>
+					<div class="column">
+						<article class="ui container">
+							<h3 class="ui header">Contact details</h3>
+							<p>
+								Thank you for your visit, I hope you had enjoyed your scroll trip.
+								Feel free to drop me a line if I can do anything else for you.
+							</p>
+							<h3 class="ui header">
+								<i class="mail icon"></i>
+								<div class="content">
+									Email
+									<div class="sub header">borref22@gmail.com</div>
+								</div>
+							</h3>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer with social links -->
+		<footer id="footer">
+			<div class="ui container">
+				<p>
+					© 2016 Andrés Castañeda. All Rights Reserved.
+				</p>
+				<p>
+					Made with&nbsp;
+					<span><i class="heart red icon"></i></span>
+					in Colombia.
+				</p>
+				<ul class="ui social">
+					<li class="item">
+						<a href="https://www.linkedin.com/in/andres-borre" target="_blank">
+							<i class="big link linkedin square icon"></i>
+						</a>
+					</li>
+					<li class="item">
+						<a href="https://github.com/borref" target="_blank">
+							<i class="big link github icon"></i>
+						</a>
+					</li>
+					<li class="item">
+						<a href="skype:borref22?chat" target="_blank">
+							<i class="big link skype icon"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- PhotoSwipe Modal -->
+		<!-- Root element of PhotoSwipe. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		    <!-- Background of PhotoSwipe.
+		         It's a separate element as animating opacity is faster than rgba(). -->
+	    <div class="pswp__bg"></div>
+	    <!-- Slides wrapper with overflow:hidden. -->
+	    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+                <div class="pswp__preloader__icn">
+                  <div class="pswp__preloader__cut">
+                    <div class="pswp__preloader__donut"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+              <div class="pswp__share-tooltip"></div>
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+          <div class="pswp__caption">
+              <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+	    </div>
+		</div>
+		<script src="libs/jquery-3.1.0.min.js"></script>
+		<script src="semantic/semantic.min.js"></script>
+		<script src="vendor/photoSwipe/photoswipe.min.js"></script>
+		<script src="vendor/photoSwipe/photoswipe-ui-default.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

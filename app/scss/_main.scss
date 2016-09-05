@@ -1,0 +1,170 @@
+
+/*******************************
+			General
+*******************************/
+
+section {
+	padding: 2.5rem 0 2rem;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+}
+
+/*******************************
+			Header | Home Section
+*******************************/
+
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	h1 {
+		display: none;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			padding: 1.5em 1em 1em;
+			// float: left;
+			a {
+				color: darken($second-white, 10%);
+				font-weight: $bold;
+
+				&:hover { color: lighten($second-white, 10%); }
+			}
+		}
+	}
+}
+
+#home {
+	background: url('../images/dark_pattern.png') repeat;
+	// height: 100vh;
+	padding: 10.714285rem 2.14285rem 14.285714rem;
+	position: relative;
+	text-align: center;
+
+	h1.header {
+		color: $second-white;
+		font-size: 2.142857em;
+		margin-bottom: 1.75rem;
+	}
+
+	p.sub.header {
+		color: darken($second-white, 20%);
+		font-size: 1.142857em;
+	}
+
+	ul.social {
+		bottom: .5em;
+		left: 0;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		width: 100%;
+
+		li.item {
+			display: inline-block;
+			padding: 1em;
+			a {
+				color: $second-white;
+			}
+		}
+	}
+}
+
+#work {
+	img { cursor: pointer; }
+	ul.technologies-list {
+		padding: 0;
+		li.ui.label {
+			margin: .14285714em*2 .14285714em;
+		}
+	}
+}
+
+
+#about {
+	p { font-size: 1.142857em; text-align: center; }
+}
+
+/*******************************
+			Footer
+*******************************/
+
+#footer {
+	background-color: $primary-black;
+	border-top: solid 8px darken($primary-black, 10%);
+	padding: 4.285714rem 0;
+	text-align: center;
+	p {
+		color: white;
+		font-weight: $bold;
+	}
+	ul.social {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li.item {
+			display: inline-block;
+			padding: 1em;
+			a {
+				color: $second-white;
+			}
+		}
+	}
+}
+
+/*******************************
+			Responsiveness
+*******************************/
+
+@include respond-to(small) {
+
+	nav a { font-size: 1.142857em; }
+
+	#home {
+		padding: 14.285714rem 7.142857rem 14.285714rem;
+		h1.header { font-size: 3em; }
+		p.sub.header { font-size: 1.285714em; }
+	}
+
+	#about {
+		.ui.container { width: 80%; }
+		p { font-size: 1.285714em; }
+	}
+};
+
+@include respond-to(medium) {
+	header { top: 1.5em; }
+
+	section { padding: 3.5rem 0 2rem; }
+
+	nav a { font-size: 1.285714em; }
+
+	#home {
+		padding: 16.071428rem 12.5rem 14.285714rem;
+		h1.header { font-size: 3em; }
+		ul.social { bottom: 1.5em; }
+	}
+
+	#about .ui.container { width: 70%; }
+};
+
+@include respond-to(large) {
+	header { top: 2em; }
+	#home {
+		padding: 17.857142rem 16.071428rem 14.285714rem;
+		h1.header { font-size: 3em; }
+		ul.social { bottom: 2em; }
+	}
+	#about .ui.container { width: 55%; }
+};
